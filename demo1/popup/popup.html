@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            width: 500px;
+        }
+        #send_message_id {
+            background-color: #336dab;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+        }
+        #close{
+            background-color: #336dab;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+        }
+        #windows{
+            border-collapse: collapse; //取消表格之间的距离
+        }
+        td{
+            border: 1px black solid; //为表格添加边框
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>窗口记录</h1>
+<table id="windows"></table>
+<input id="name" type="text" value="在此输入窗口名"/>
+<button id="send_message_id">保存</button>
+<button id="close">关闭</button>
+<script src="popup.js"></script>
+</body>
+</html>

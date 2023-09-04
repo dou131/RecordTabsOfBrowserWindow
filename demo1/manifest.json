@@ -1,0 +1,32 @@
+{
+  "name": "窗口记录",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "An extension to save window.",
+  "icons": {
+    "16": "icons/NASA16.png",
+    "32": "icons/NASA32.png",
+    "48": "icons/NASA48.png",
+    "128": "icons/NASA128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["lib/jquery.min.js","content-scripts/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage"
+  ]
+}
