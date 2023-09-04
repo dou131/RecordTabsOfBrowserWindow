@@ -1,0 +1,2 @@
+# RecordTabsOfBrowserWindow
+保存当前浏览器窗口的全部标签，方便下次打开
